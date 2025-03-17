@@ -1,0 +1,82 @@
+.cashier-managesale-table-checkbox,
+.cashier-managesale-table-name,
+.cashier-managesale-table-code,
+.cashier-managesale-table-action {
+	display: flex;
+        flex-direction: column;
+        justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+    font-weight: 400;
+    color: var(--clr-body-bodyText);
+	}
+}
+
+.ledgergroup-table .cashier-managesale-table-checkbox {
+	min-width: 100px;
+	width: 14%;
+    @media (max-width: 1900px) {
+		min-width: 70px;
+		width: 12%;
+	}
+    @media (max-width: 1600px) {
+		min-width: 50px;
+		width: 12%;
+	}
+    @media (min-width: 768px) and (max-width: 991px) {
+        min-width: 50px;
+		width: 10%;
+    }
+}
+.ledgergroup-table .cashier-managesale-table-name {
+	min-width: 520px;
+	width: 72%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+        min-width: 405px;
+		width: 70%;
+		padding-right: 10px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+        min-width: 315px;
+		width: 67%;
+		padding-right: 10px;
+	}
+    @media (min-width: 1201px) and (max-width: 1400px) {
+        min-width: 325px;
+		width: 68%;
+		padding-right: 10px;
+	}
+    @media (min-width: 992px) and (max-width: 1200px) {
+        min-width: 265px;
+		width: 66%;
+		padding-right: 10px;
+	}
+    @media (max-width: 991px) {
+        min-width: 485px;
+		width: 74%;
+	}
+    @media (max-width: 767px) {
+		min-width: 485px;
+		width: 74%;
+	}
+}
+
+
+.cashier-managesale-table-inner {
+	@media (max-width: 767px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-managesale-table-inner-wrapper {
+	@media (max-width: 767px) {
+		min-width: 100%;
+        width: 655px;
+		scrollbar-height: thin;
+	}
+}

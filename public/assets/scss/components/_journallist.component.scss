@@ -1,0 +1,124 @@
+.cashier-journal-calender {
+	button {
+		font-size: 14px !important;
+		font-weight: 600 !important;
+		color: var(--clr-common-white) !important;
+		border-radius: 5px !important;
+		height: 48px !important;
+		line-height: 48px !important;
+		padding: 0px 24px !important;
+		margin-right: 16px !important;
+        margin-bottom: 20px !important;
+		&:last-child {
+			margin-right: 0px !important;
+		}
+	}
+	button.btn-primary {
+		background: var(--clr-theme-themeBlue);
+	}
+}
+
+.cashier-salereturns-table-checkboxC,
+.cashier-salereturns-table-dateC,
+.cashier-salereturns-table-referenceC,
+.cashier-salereturns-table-customerC,
+.cashier-salereturns-table-warehouseC,
+.cashier-salereturns-table-biller,
+.cashier-salereturns-table-total,
+.cashier-salereturns-table-remark,
+.cashier-salereturns-table-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-salereturns-table-checkboxC {
+	min-width: 70px;
+	width: 4.5%;
+}
+.cashier-salereturns-table-dateC {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 250px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 19%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 19%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-referenceC {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 22%;
+		min-width: 260px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 40%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-customerC {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 240px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 21%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-warehouseC {
+	min-width: 280px;
+	width: 19%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 240px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 19%;
+		min-width: 180px;
+	}
+    @media (max-width: 1400px) {
+		width: 19%;
+		min-width: 180px;
+	}
+}
+
+.cashier-salereturns-table-innerL {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperL {
+	@media (max-width: 1200px) {
+		width: 1090px;
+		scrollbar-height: thin;
+	}
+}

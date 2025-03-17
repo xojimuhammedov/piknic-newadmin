@@ -1,0 +1,178 @@
+.cashier-salereturns-table-checkbox,
+.cashier-salereturns-table-dateP,
+.cashier-salereturns-table-referenceP,
+.cashier-salereturns-table-customerP,
+.cashier-salereturns-table-companyP,
+.cashier-salereturns-table-warehouseP,
+.cashier-salereturns-table-actionP {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-salereturns-table-checkbox {
+	min-width: 70px;
+	width: 4.5%;
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 50px;
+		width: 4.5%;
+	}
+}
+.cashier-salereturns-table-dateP {
+	min-width: 220px;
+	width: 15%;
+	padding-left: 20px;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 15%;
+		min-width: 175px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 18%;
+		min-width: 180px;
+	}
+    @media (max-width: 1400px) {
+		width: 18%;
+		min-width: 180px;
+	}
+}
+.cashier-salereturns-table-referenceP {
+	min-width: 315px;
+	width: 21%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 24%;
+		min-width: 260px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 22%;
+		min-width: 215px;
+	}
+    @media (max-width: 1400px) {
+		width: 22%;
+		min-width: 215px;
+	}
+}
+.cashier-salereturns-table-customerP {
+	min-width: 280px;
+	width: 19%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 18%;
+		min-width: 200px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 16%;
+		min-width: 150px;
+	}
+    @media (max-width: 1400px) {
+		width: 16%;
+		min-width: 150px;
+	}
+}
+.cashier-salereturns-table-companyP {
+	min-width: 230px;
+	width: 16%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 17%;
+		min-width: 185px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 15%;
+		min-width: 120px;
+	}
+    @media (max-width: 1400px) {
+		width: 15%;
+		min-width: 120px;
+	}
+}
+.cashier-salereturns-table-warehouseP {
+	min-width: 345px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 20%;
+		min-width: 160px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 205px;
+	}
+    @media (max-width: 1400px) {
+		width: 21%;
+		min-width: 205px;
+	}
+}
+
+
+.cashier-salereturns-table-innerS {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperS {
+	@media (max-width: 1200px) {
+		width: 1090px;
+		scrollbar-height: thin;
+	}
+}
+
+
+.cashier-transection-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 8px;
+	@media (min-width: 1401px) and (max-width: 1800px) {
+		padding: 24px 16px;
+	}
+	&-text {
+		h5 {
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--clr-body-bodyText);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+			}
+		}
+		h4 {
+			font-size: 22px;
+			font-weight: 700;
+			color: var(--clr-body-heading);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 18px;
+			}
+		}
+	}
+	&-percent {
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--clr-common-white);
+			height: 30px;
+			line-height: 31px;
+			border-radius: 16px;
+			padding: 0px 12px;
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+				padding: 0px 8px;
+			}
+		}
+	}
+}
+.cashier-transection-selector {
+	&-single {
+		.mat-form-field-flex {
+			height: 40px;
+			line-height: 38px;
+			padding: 0px 20px; 
+		}
+	}
+}

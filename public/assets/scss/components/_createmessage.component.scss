@@ -1,0 +1,60 @@
+.cashier-notification-text {
+    width: calc(100% - 90px);
+	@media (max-width: 500px) {
+		width: calc(100% - 65px);
+	}
+}
+.cashier-notification {
+    @include transition;
+    &:hover {
+        background: var(--clr-common-white);
+    }
+}
+
+.cashier-manageproduct-top-btn {
+	button {
+		font-size: 16px !important;
+		font-weight: 700 !important;
+		color: var(--clr-common-white) !important;
+		border-radius: 5px !important;
+		height: 48px !important;
+		line-height: 48px !important;
+		padding: 0px 28px !important;
+		margin-right: 16px !important;
+		background: var(--clr-theme-themeBlue);
+		&:hover {
+			background: var(--clr-theme-themeBlue);
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 4px;
+		}
+		&:last-child {
+			margin-right: 0px !important;
+		}
+	}
+
+
+}
+.cashier-newmessage-wrapper {
+	.cashier-newmessage-nav {
+		width: 210px;
+		margin-right: 50px;
+		@media (max-width: 767px) {
+            width: 100%;
+			margin-right: 0px;
+			margin-bottom: 8px;
+        }
+	}
+	.cashier-newmessage-content {
+		width: calc(100% - 260px);
+		@media (max-width: 767px) {
+            width: 100%;
+        }
+	}
+	@media (max-width: 767px) {
+		display: block;
+	}
+}
+.cashier-newmessage-send-btn button {
+	width: inherit !important;
+}

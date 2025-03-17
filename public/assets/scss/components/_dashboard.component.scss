@@ -1,0 +1,68 @@
+.cashier-dashboard-main.sidebar-enable {
+    .apexcharts-canvas {
+        width: 100% !important;
+    }
+}
+.cashier-bar-chart h5 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+}
+.common-blue-badge {
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: var(--clr-theme-themeBlue);
+    border-radius: 4px;
+    display: inline-block;
+    color: var(--clr-common-white);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.cashier-dashboard-sidebar {
+    @media (min-width: 1201px) and (max-width: 1900px) {
+        margin-left: -315px;
+    }
+    @media (max-width: 1200px) {
+      margin-left: -300px;
+    }
+    .cashier-header-bar-responsive {
+        @media (max-width: 1900px) {
+            right: -56px;
+          }
+        @media (max-width: 1200px) {
+          right: -40px;
+        }
+    }
+  }
+  .cashier-dashboard-main {
+    @media (min-width: 1900px) {
+      width: calc(100% - 315px);
+    }
+    @media (max-width: 1200px) {
+      margin-left: 0px;
+    }
+  }
+  .cashier-dashboard-sidebar.sidebar-enable {
+    @media (min-width: 1201px) and (max-width: 1900px) {
+      margin-left: 0px;
+    }
+    @media (max-width: 1200px) {
+      margin-left: 0px;
+    }
+  }
+
+.cashier-menu-overlay-dashboard.sidebar-enable {
+  @media (max-width: 1900px) {
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10px;
+  }
+}
+

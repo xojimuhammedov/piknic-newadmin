@@ -1,0 +1,110 @@
+.cashier-netincome-box,
+.cashier-salereturns-table-income-a,
+.cashier-salereturns-table-january-a,
+.cashier-salereturns-table-february,
+.cashier-salereturns-table-march,
+.cashier-salereturns-table-april,
+.cashier-salereturns-table-may {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+		&.font-regular {
+			font-weight: 400;
+		}
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-netincome-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 280px;
+	border-right: 1px solid var(--clr-body-grayBorder);
+	padding-left: 20px;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 28%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 160px;
+		width: 40%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 160px;
+		width: 40%;
+	}
+}
+
+.cashier-salereturns-table-innerG {
+	@media (max-width: 575px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperG {
+	@media (max-width: 575px) {
+		width: 465px;
+		scrollbar-height: thin;
+	}
+}
+
+.cashier-transection-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px;
+	border-radius: 8px;
+	@media (min-width: 1401px) and (max-width: 1800px) {
+		padding: 24px 16px;
+	}
+	&-text {
+		h5 {
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--clr-body-bodyText);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+			}
+		}
+		h4 {
+			font-size: 22px;
+			font-weight: 700;
+			color: var(--clr-body-heading);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 18px;
+			}
+		}
+	}
+	&-percent {
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--clr-common-white);
+			height: 30px;
+			line-height: 31px;
+			border-radius: 16px;
+			padding: 0px 12px;
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+				padding: 0px 8px;
+			}
+		}
+	}
+}
+.cashier-transection-selector {
+	&-single {
+		.mat-form-field-flex {
+			height: 40px;
+			line-height: 38px;
+			padding: 0px 20px; 
+		}
+	}
+}

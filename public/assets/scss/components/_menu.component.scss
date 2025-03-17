@@ -1,0 +1,93 @@
+.cashier-menu-wrapper {
+    position: fixed;
+    top: 0px;
+    width: 315px;
+    min-width: 315px;
+    overflow-y: auto;
+    height: 100vh;
+    left: 0px;
+    z-index: 91;
+    @media (max-width: 1400px) {
+        left: -100%;
+    }
+    @media (max-width: 1200px) {
+        width: 300px;
+        min-width: 300px;
+    }
+    @media (min-width: 320px) and (max-width: 1900px) {
+        left: -320px;
+        box-sizing: border-box;
+    }
+    @include transition;
+    max-width: 315px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.cashier-menu {
+    & ul {
+        & li {
+            & a {
+                font-size: 15px;
+                font-weight: 600;
+                color: var(--clr-body-heading);
+                width: 100%;
+                padding: 16px 20px;
+                border-radius: 4px;
+                display: block;
+                & .mat-icon {
+                    text-align: right;
+                    color: var(--clr-body-heading);
+                    font-size: 20px;
+                    @include lineHeightinherit;
+                    width: 13px !important;
+                }
+            }
+            &:hover > a {
+                background: var(--clr-body-grayBorder);
+            }
+            &.mm-active > .has-arrow[aria-expanded="true"] {
+                color: var(--clr-common-white);
+                background: var(--clr-theme-themeBlue);
+                & path,
+                & rect {
+                    fill: var(--clr-common-white);
+
+                }
+            }
+            &.mm-active .mm-active > .has-arrow[aria-expanded="true"] {
+                background: transparent;
+                color: var(--clr-body-heading);
+                &:hover {
+                    background: var(--clr-body-grayBorder);
+                }
+            }
+            & path,
+            & rect {
+                fill: var(--clr-theme-themeBlue);
+            }
+            & svg {
+                width: 28px;
+                margin-right: 16px;
+                height: 18px;
+                margin-top: -4px !important;
+                margin-left: -4px !important; 
+            }
+        }
+    }
+    .has-arrow[aria-expanded="true"] {
+        background: var(--clr-theme-themeBlue);
+        &:hover {
+            background: var(--clr-theme-themeBlue);
+        }
+    }
+    li > .mm-collapse ,li > .mm-collapsing {
+        padding: 0px 10px;
+    }
+    li > .mm-collapse > li > .mm-collapse, li > .mm-collapse > li > .mm-collapsing {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

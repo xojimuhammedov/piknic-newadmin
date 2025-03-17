@@ -1,0 +1,33 @@
+.cashier-popup-inner {
+    width: 100%;
+    padding: 28px;
+}
+
+.cashier-input-field-file-label label {
+	display: none;
+}
+.cashier-invoice-popup-btn.cashier-table-header-search-action-btn button {
+    @include widthInherit;
+    padding: 0px 16px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0px 16px 0px 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    & svg {
+        margin-right: 10px;
+      }
+    &.printer {
+        color: var(--clr-theme-themeBlue);
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+    &.pdf {
+        color: var(--clr-theme-themeOrange);
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        };
+    }
+}

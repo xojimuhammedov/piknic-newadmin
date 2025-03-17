@@ -1,0 +1,112 @@
+.cashier-popup-inners {
+    width: 100% !important;
+    padding: 28px;
+	  @media (min-width: 768px) and (max-width: 991px) {
+        width: 600px !important;
+    }
+    @media (min-width: 576px) and (max-width: 767px) {
+      width: 440px !important;
+    }
+    @media (min-width: 450px) and (max-width: 575px) {
+      width: 350px !important;
+    }
+    @media (max-width: 449px) {
+      width: 100% !important;
+    }
+}
+.cashier-bill-address,
+.cashier-bill-view-details {
+  @media (max-width: 991px) {
+    min-width: 850px;
+  }
+}
+
+.cashier-bill-address {
+  border: 1px solid var(--clr-body-grayBorder);
+}
+.cashier-bill-address-info {
+  padding: 25px;
+  border-right: 1px solid var(--clr-body-grayBorder);
+  h5 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--clr-body-heading);
+  }
+  ul {
+    li {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--clr-body-heading);
+      padding-bottom: 2px;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--clr-body-bodyText);
+  }
+  &.last-info {
+    border-right: 0px;
+  }
+}
+
+.cashier-bill-view-list-sl,
+.cashier-bill-view-list-product,
+.cashier-bill-view-list-products,
+.cashier-bill-view-list-batch,
+.cashier-bill-view-list-unit,
+.cashier-bill-view-list-price,
+.cashier-bill-view-list-qty,
+.cashier-bill-view-list-tax,
+.cashier-bill-view-list-discount,
+.cashier-bill-view-list-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+    font-weight: 400;
+    color: var(--clr-body-bodyText);
+	}
+}
+
+.cashier-bill-view-list-sl {
+  min-width: 40px;
+}
+.cashier-bill-view-list-product {
+  min-width: 185px;
+}
+.cashier-bill-view-list-products {
+  min-width: 225px;
+}
+.cashier-bill-view-list-batch {
+  min-width: 90px;
+}
+.cashier-bill-view-list-unit {
+  min-width: 55px;
+}
+.cashier-bill-view-list-price {
+  min-width: 90px;
+}
+.cashier-bill-view-list-qty {
+  min-width: 55px;
+}
+.cashier-bill-view-list-tax {
+  min-width: 95px;
+}
+.cashier-bill-view-list-discount {
+  min-width: 90px;
+}
+.cashier-bill-view-list-total {
+  min-width: 80px;
+  border-right: 0px;
+}

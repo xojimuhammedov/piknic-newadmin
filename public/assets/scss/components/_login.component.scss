@@ -1,0 +1,60 @@
+// Input field style
+
+.cashier-login-btn-full {
+    button.btn-primary {
+        background: var(--clr-theme-themeBlue);
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--clr-common-white);
+        width: 100%;
+        height: 48px;
+        justify-content: center; 
+    }
+}
+.cashier-login-wrapper {
+    display: inline-block;
+    width: 560px;
+    max-width: 560px;
+    border-radius: 10px;
+    padding: 48px;
+    padding-bottom: 44px;
+    background: var(--clr-common-white);
+    box-shadow: 0px 10px 30px rgba(19,41,85,0.05);
+    @media (max-width: 600px) {
+		width: calc(100% - 40px);
+        max-width: inherit;
+        padding: 20px;
+        padding-bottom: 16px;
+	}
+    .cashier-input-field-style input {
+        padding-right: 36px;
+    }
+}
+.cashier-input-field-style-eye {
+    button {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        color: #a8a8a8;
+        border-radius: 0px;
+        display: none;
+    }
+}
+.cashier-input-field-style {
+    position: relative;
+    .input-icon {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        display: inline-block;
+        i {
+            color: #a8a8a8;
+            font-size: 16px;
+            border-radius: 0px;
+        }
+    }
+}
+
+// 
+
+

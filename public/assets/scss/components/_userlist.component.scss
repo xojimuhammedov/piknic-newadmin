@@ -1,0 +1,140 @@
+.cashier-salereturns-table-checkboxJ,
+.cashier-salereturns-table-dateJ,
+.cashier-salereturns-table-referenceJ,
+.cashier-salereturns-table-customerJ,
+.cashier-salereturns-table-companyJ,
+.cashier-salereturns-table-warehouseJ,
+.cashier-salereturns-table-actionJ {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+	& figure {
+		display: inline-block;
+		text-align: center;
+		width: 70px;
+	}
+}
+.cashier-salereturns-table-checkboxJ {
+	min-width: 70px;
+	width: 4.5%;
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 50px;
+		width: 4.5%;
+	}
+}
+.cashier-salereturns-table-dateJ {
+	min-width: 220px;
+	width: 15%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 15%;
+		min-width: 175px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 18%;
+		min-width: 180px;
+	}
+    @media (max-width: 1400px) {
+		width: 18%;
+		min-width: 180px;
+	}
+}
+.cashier-salereturns-table-referenceJ {
+	min-width: 220px;
+	width: 15%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 15%;
+		min-width: 175px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 14%;
+		min-width: 120px;
+	}
+    @media (max-width: 1400px) {
+		width: 14%;
+		min-width: 120px;
+	}
+}
+.cashier-salereturns-table-customerJ {
+	min-width: 280px;
+	width: 19%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 18%;
+		min-width: 200px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 16%;
+		min-width: 150px;
+	}
+    @media (max-width: 1400px) {
+		width: 16%;
+		min-width: 150px;
+	}
+}
+.cashier-salereturns-table-companyJ {
+	min-width: 230px;
+	width: 16%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 17%;
+		min-width: 185px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 15%;
+		min-width: 120px;
+	}
+    @media (max-width: 1400px) {
+		width: 15%;
+		min-width: 120px;
+	}
+}
+.cashier-salereturns-table-warehouseJ {
+	min-width: 345px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 20%;
+		min-width: 160px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 205px;
+	}
+    @media (max-width: 1400px) {
+		width: 21%;
+		min-width: 205px;
+	}
+}
+
+
+.cashier-salereturns-table-checkboxJ {
+	input {
+		margin-left: 16px;
+	}
+	.mat-checkbox-frame {
+		border-color: #CBCED4 !important;
+	}
+	.mat-checkbox {
+		display: flex;
+	}
+}
+
+.cashier-salereturns-table-innerX {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperX {
+	@media (max-width: 1200px) {
+		width: 1090px;
+		scrollbar-height: thin;
+	}
+}

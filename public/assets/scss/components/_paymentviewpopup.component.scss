@@ -1,0 +1,166 @@
+.cashier-popup-inner {
+    width: 100%;
+    padding: 28px;
+}
+
+.cashier-invoice-popup-address {
+    h5 {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--clr-body-heading);
+        margin-bottom: 16px;
+    }
+    ul {
+        li {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--clr-body-heading);
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--clr-body-bodyText);
+            }
+        }
+    }
+}
+
+.cashier-invoice-table-list {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--clr-body-grayBorder);
+}
+.cashier-invoice-table-sl,
+.cashier-invoice-table-sll,
+.cashier-invoice-table-product,
+.cashier-invoice-table-batch,
+.cashier-invoice-table-unit,
+.cashier-invoice-table-price,
+.cashier-invoice-table-qty,
+.cashier-invoice-table-tax,
+.cashier-invoice-table-discount,
+.cashier-invoice-table-total {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 10px;
+    h5 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--clr-body-heading);
+    }
+    span {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--clr-body-bodyText);
+    }
+}
+.cashier-invoice-table-sll {
+    min-width: 209px;
+    width: 209px;
+}
+.cashier-invoice-table-area-batch-wd {
+    .cashier-invoice-table-sl {
+        min-width: 40px;
+        width: 40px;
+    }
+    .cashier-invoice-table-batch {
+        min-width: 95px;
+        width: 95px;
+    }
+    .cashier-invoice-table-product {
+        min-width: 170px;
+        width: 170px;
+    }
+}
+.cashier-invoice-table-unit {
+    min-width: 50px;
+    width: 50px;
+}
+.cashier-invoice-table-price {
+    min-width: 90px;
+    width: 90px;
+}
+.cashier-invoice-table-qty {
+    min-width: 50px;
+    width: 50px;
+}
+.cashier-invoice-table-tax {
+    min-width: 90px;
+    width: 90px;
+}
+.cashier-invoice-table-discount {
+    min-width: 90px;
+    width: 90px;
+}
+.cashier-invoice-table-total {
+    border-right: 0px;
+}
+.custom-height-70 {
+    height: 70px;
+}
+
+
+.cashier-invoice-popup-btn.cashier-table-header-search-action-btn button {
+    @include widthInherit;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0px;
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 38px;
+    & svg {
+        margin-right: 10px;
+      }
+    &.printer {
+        color: var(--clr-theme-themeBlue);
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        }
+    }
+    &.pdf {
+        color: var(--clr-theme-themeOrange);
+        @media (max-width: 767px) {
+            margin-bottom: 10px;
+        };
+    }
+}
+
+.cashier-invoice-table-inner {
+	@media (max-width: 991px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-invoice-table-inner-wrapper {
+	@media (max-width: 991px) {
+		min-width: 100%;
+        width: 740px;
+		scrollbar-height: thin;
+	}
+}
+
+.cashier-invoice-popup-heading {
+    ul {
+        @media (max-width: 991px) {
+            height: 48px;
+        }
+        @media (max-width: 767px) {
+            height: 100%;
+        }
+        li {
+            span {
+                @media (max-width: 991px) {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

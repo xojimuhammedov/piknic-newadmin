@@ -1,0 +1,177 @@
+.cashier-notification-text {
+    width: calc(100% - 90px);
+    @media (max-width: 500px) {
+		width: calc(100% - 65px);
+	}
+}
+.cashier-notification {
+    @include transition;
+    &:hover {
+        background: var(--clr-common-white);
+    }
+}
+.cashier-notification-feedback {
+    .mat-raised-button {
+		font-size: 15px !important;
+		font-weight: 600 !important;
+		color: var(--clr-body-bodyText) !important;
+		border-radius: 5px !important;
+		height: 40px !important;
+		line-height: 38px !important;
+		padding: 0px 20px !important;
+		margin-right: 10px !important;
+        border: 1px solid var(--clr-body-grayBorder);
+        background: none !important;
+		box-shadow: none;
+		@media (max-width: 767px) {
+			margin-bottom: 4px;
+		}
+		&:last-child {
+			margin-right: 0px !important;
+		}
+	}
+    svg {
+        margin-right: 5px;
+        transform: translateY(-2px);
+    }
+}
+.cashier-notification-wrapper {
+   padding: 0px;
+    .mat-tab-header {
+        margin-right: 50px;
+        border: 0px;
+        @media (max-width: 991px) {
+            margin-right: 25px;
+        }
+        @media (max-width: 767px) {
+            margin-right: 0px;
+            margin-bottom: 32px;
+        }
+    }
+    .mat-tab-group {
+        font-family: 'Nunito Sans', sans-serif;
+        flex-direction: row;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    div.cashiar-tab-labels {
+        display: flex;
+        flex-direction: column;
+        min-width: 340px;
+        height: 670px;
+        background: #F5F7FB;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: left;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .mat-ink-bar {
+        display: none;
+    }
+    .cashiar-tab-label {
+        white-space: inherit;
+        overflow: hidden;
+        padding: 0px;
+        opacity: 1;
+        text-align: left;
+        justify-content: flex-start;
+        min-width: 100%;
+        &.cashiar-tab-label-active {
+            .cashier-notification {
+                background: var(--clr-common-white);
+            }
+        }
+    }
+    li.cashiar-tab-label {
+        min-height: 100px;
+        button {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .cashier-notification {
+        padding: 20px 14px;
+        width: 100%;
+    }
+    .cashiar-tab-label .cashiar-tab-label-content {
+        white-space: inherit;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .cashiar-tab-label-container {
+        width: 400px;
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 440px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 640px;
+        }
+    }
+    @media (max-width: 500px) {
+        .cashiar-tab-label {
+            min-height: 150px;
+        }
+        .cashiar-tab-labels {
+            min-width: 100%;
+        }
+        .cashier-notification {
+            display: block;
+        }
+        .cashier-notification-text {
+            width: calc(100% - 15px);
+        }
+        .cashier-notification-img {
+            margin-bottom: 15px;
+            margin-right: 0px;
+        }
+    }
+}
+.cashier-notification-body {
+     overflow: hidden;
+}
+.cashier-notification-action {
+    button {
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 12px;
+        color: var(--clr-body-bodyText);
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+div.cashier-notification-search {
+    .mat-icon {
+        position: absolute;
+        top: 13px;
+        padding-left: 10px;
+        color: #B8BBBF;
+        left: 0;
+    }
+    input {
+        padding-left: 40px;
+    }
+}
+.cashier-notification-wrapper {
+    @media (max-width: 1200px) {
+        overflow-x: auto;
+    }
+}
+.cashier-notification-wrapper-inner {
+    @media (max-width: 1200px) {
+        min-width: 100%;
+        width: 830px;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+button.mat-raised-button.mat-primary {
+    background: var(--clr-theme-themeBlue);
+}

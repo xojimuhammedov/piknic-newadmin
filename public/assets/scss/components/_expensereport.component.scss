@@ -1,0 +1,175 @@
+.cashier-salereturns-table-incomeL,
+.cashier-salereturns-table-januaryL,
+.cashier-salereturns-table-februaryL,
+.cashier-salereturns-table-marchL,
+.cashier-salereturns-table-aprilL,
+.cashier-salereturns-table-mayL,
+.cashier-salereturns-table-juneL,
+.cashier-salereturns-table-julyL,
+.cashier-salereturns-table-augustL,
+.cashier-salereturns-table-septemberL,
+.cashier-salereturns-table-octoberL,
+.cashier-salereturns-table-novemberL,
+.cashier-salereturns-table-decemberL {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+    font-weight: 400;
+    color: var(--clr-body-bodyText);
+	}
+}
+.cashier-salereturns-table-incomeL {
+	padding-left: 20px;
+	min-width: 200px;
+	width: 15%;
+}
+.cashier-salereturns-table-januaryL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-februaryL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-marchL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-aprilL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-mayL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-juneL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-julyL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-augustL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-septemberL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-octoberL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-novemberL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-salereturns-table-decemberL {
+	min-width: 105px;
+	width: 6%;
+}
+.cashier-transection-chart-area {
+	height: calc(100% - 20px);
+	padding: 16px 22px;
+}
+
+
+
+
+
+.cashier-salereturns-table-innerJ {
+	@media (max-width: 1900px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperJ {
+	@media (max-width: 1900px) {
+		min-width: 1475px;
+		scrollbar-height: thin;
+	}
+}
+
+
+.cashier-transection-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 8px;
+	@media (min-width: 1401px) and (max-width: 1800px) {
+		padding: 24px 16px;
+	}
+	&-text {
+		h5 {
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--clr-body-bodyText);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+			}
+		}
+		h4 {
+			font-size: 22px;
+			font-weight: 700;
+			color: var(--clr-body-heading);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 18px;
+			}
+		}
+	}
+	&-percent {
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--clr-common-white);
+			height: 30px;
+			line-height: 31px;
+			border-radius: 16px;
+			padding: 0px 12px;
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+				padding: 0px 8px;
+			}
+		}
+	}
+}
+.cashier-transection-selector {
+	&-single {
+		.mat-form-field-flex {
+			height: 40px;
+			line-height: 38px;
+			padding: 0px 20px; 
+		}
+	}
+}
+.cashier-transection-chart-area {
+	@media (min-width: 320px) and (max-width: 1900px) {
+		display: block;
+		text-align: center;
+		overflow: hidden;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	@media (max-width: 575px) {
+		overflow-x: auto;
+	}
+}
+.cashier-transection-info {
+	@media (min-width: 320px) and (max-width: 1900px) {
+		height: calc(100% - 20px);
+	}
+}
+div.apexcharts-canvas {
+	display: inline-block;
+}

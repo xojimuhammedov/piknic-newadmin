@@ -1,0 +1,34 @@
+// others common css here :)
+$colors: (
+    common: (
+        "white": #fff,
+        "black": #000,
+    ),
+    body: (
+        "heading": #0D0F19,
+        "bodyText": #616161,
+        "grayBorder": #EFF0F2,
+        "bodyBg": #F6F6F6,
+        "grayBg": #FCFCFC,
+        "grayBgLight": #f9f9f9,
+    ),
+    theme: (
+        "themeBlue": #6F4EF6,
+        "themeGreen": #5BC5A8,
+        "themeGreenDark": #27DB8D,
+        "themeOrange": #FF9720,
+        "themeOrangeDark": #FFC403,
+        "themeWarn": #DF7272,
+        "themePerple": #866AD4,
+    ),
+);
+:root {
+    /**
+    @color declaration
+    */
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+}

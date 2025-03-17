@@ -1,0 +1,169 @@
+.cashier-managesale-top-btn {
+	.mat-raised-button {
+		font-size: 15px !important;
+		font-weight: 600 !important;
+		color: var(--clr-common-white) !important;
+		border-radius: 5px !important;
+		height: 48px !important;
+		line-height: 48px !important;
+		padding: 0px 28px !important;
+		margin-right: 16px !important;
+		margin-bottom: 6px !important;
+		&:last-child {
+			margin-right: 0px !important;
+		}
+	}
+	.mat-button-wrapper {
+		display: flex !important;
+		align-items: center !important;
+	}
+	.mat-icon {
+		width: 20px !important;
+		transform: translateX(-3px) !important;
+		margin-right: 10px;
+	}
+	.mat-raised-button.mat-primary {
+		background: var(--clr-theme-themeBlue);
+	}
+	.mat-raised-button.mat-accent {
+		background: var(--clr-theme-themeOrangeDark);
+		color: var(--clr-body-heading) !important;
+	}
+}
+.cashier-salereturns-table-checkbox,
+.cashier-salereturns-table-date,
+.cashier-salereturns-table-reference,
+.cashier-salereturns-table-customer,
+.cashier-salereturns-table-warehouse,
+.cashier-salereturns-table-biller,
+.cashier-salereturns-table-total,
+.cashier-salereturns-table-mode,
+.cashier-salereturns-table-remark,
+.cashier-salereturns-table-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.creditlist-table .cashier-salereturns-table-checkbox {
+	min-width: 50px;
+	width: 3.5%;
+}
+.creditlist-table .cashier-salereturns-table-date {
+	min-width: 160px;
+	width: 10%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 10%;
+		min-width: 120px;
+	}
+	@media (max-width: 1600px) {
+		width: 10%;
+		min-width: 120px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-reference {
+	min-width: 190px;
+	width: 14%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 14%;
+		min-width: 160px;
+	}
+	@media (max-width: 1600px) {
+		width: 14%;
+		min-width: 160px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-customer {
+	min-width: 180px;
+	width: 12%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 10%;
+		min-width: 120px;
+	}
+	@media (max-width: 1600px) {
+		width: 10%;
+		min-width: 120px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-warehouse {
+	min-width: 180px;
+	width: 13%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 14%;
+		min-width: 160px;
+	}
+	@media (max-width: 1600px) {
+		width: 14%;
+		min-width: 160px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-biller {
+	min-width: 160px;
+	width: 12%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 12%;
+		min-width: 135px;
+	}
+	@media (max-width: 1600px) {
+		width: 12%;
+		min-width: 135px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-total {
+	min-width: 155px;
+	width: 10%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 11%;
+		min-width: 120px;
+	}
+	@media (max-width: 1600px) {
+		width: 11%;
+		min-width: 120px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-mode {
+	min-width: 115px;
+	width: 7.5%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 8%;
+		min-width: 90px;
+	}
+	@media (max-width: 1600px) {
+		width: 8%;
+		min-width: 90px;
+	}
+}
+.creditlist-table .cashier-salereturns-table-remark {
+	min-width: 140px;
+	width: 9%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 8%;
+		min-width: 90px;
+	}
+	@media (max-width: 1600px) {
+		width: 8%;
+		min-width: 90px;
+	}
+}
+
+.cashier-salereturns-table-innerF {
+	@media (max-width: 1400px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperF {
+	@media (max-width: 1400px) {
+		width: 1175px;
+		scrollbar-height: thin;
+	}
+}

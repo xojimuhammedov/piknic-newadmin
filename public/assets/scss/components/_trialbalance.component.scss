@@ -1,0 +1,64 @@
+.cashier-salereturns-table-referenceQ,
+.cashier-salereturns-table-customerQ,
+.cashier-salereturns-table-companyQ {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-salereturns-table-referenceQ {
+	min-width: 290px;
+	width: 74%;
+	padding-left: 20px;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 65%;
+		min-width: 220px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 60%;
+		min-width: 200px;
+	}
+	@media (min-width: 1201px) and (max-width: 1400px) {
+		width: 64%;
+		min-width: 200px;
+	}
+	@media (min-width: 992px) and (max-width: 1200px) {
+		width: 56%;
+		min-width: 200px;
+	}
+    @media (max-width: 991px) {
+		width: 45%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-customerQ {
+	min-width: 250px;
+	width: 17%;
+    @media (max-width: 991px) {
+		width: 35%;
+		min-width: 150px;
+	}
+}
+
+
+.cashier-salereturns-table-innerU {
+	@media (max-width: 991px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperU {
+	@media (max-width: 991px) {
+		width: 650px;
+		scrollbar-height: thin;
+	}
+}

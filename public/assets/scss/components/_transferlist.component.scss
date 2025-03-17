@@ -1,0 +1,105 @@
+.cashier-salereturns-table-checkbox,
+.cashier-salereturns-table-date,
+.cashier-salereturns-table-reference,
+.cashier-salereturns-table-customer,
+.cashier-salereturns-table-warehouse,
+.cashier-salereturns-table-biller,
+.cashier-salereturns-table-total,
+.cashier-salereturns-table-remark,
+.cashier-salereturns-table-action {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-salereturns-table-checkbox {
+	min-width: 70px;
+	width: 4.5%;
+}
+.cashier-salereturns-table-date {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 250px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 19%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 19%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-reference {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 22%;
+		min-width: 260px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 21%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-customer {
+	min-width: 340px;
+	width: 23%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 240px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 200px;
+	}
+    @media (max-width: 1400px) {
+		width: 21%;
+		min-width: 200px;
+	}
+}
+.cashier-salereturns-table-warehouse {
+	min-width: 280px;
+	width: 19%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		width: 21%;
+		min-width: 240px;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		width: 19%;
+		min-width: 180px;
+	}
+    @media (max-width: 1400px) {
+		width: 19%;
+		min-width: 180px;
+	}
+}
+
+
+.cashier-salereturns-table-innerT {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperT {
+	@media (max-width: 1200px) {
+		width: 1090px;
+		scrollbar-height: thin;
+	}
+}

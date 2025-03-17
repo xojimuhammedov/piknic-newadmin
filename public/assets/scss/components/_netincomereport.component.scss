@@ -1,0 +1,189 @@
+.cashier-netincome-box,
+.cashier-salereturns-table-incomeN,
+.cashier-salereturns-table-januaryN,
+.cashier-salereturns-table-februaryN,
+.cashier-salereturns-table-marchN,
+.cashier-salereturns-table-aprilN,
+.cashier-salereturns-table-mayN {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h5 {
+		font-size: 15px;
+		font-weight: 600;
+		color: var(--clr-body-heading);
+	}
+	& span {
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--clr-body-bodyText);
+	}
+}
+.cashier-netincome-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 280px;
+	border-right: 1px solid var(--clr-body-grayBorder);
+	padding-left: 20px;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 28%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 260px;
+		width: 25%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 260px;
+		width: 25%;
+	}
+}
+
+.cashier-salereturns-table-incomeN {
+	min-width: 220px;
+	width: 20%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 19%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 125px;
+		width: 13%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 135px;
+		width: 19%;
+	}
+}
+.cashier-salereturns-table-januaryN {
+	min-width: 220px;
+	width: 20%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 19%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 125px;
+		width: 13%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 135px;
+		width: 19%;
+	}
+}
+.cashier-salereturns-table-februaryN {
+	min-width: 220px;
+	width: 20%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 19%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 125px;
+		width: 13%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 135px;
+		width: 19%;
+	}
+}
+.cashier-salereturns-table-marchN {
+	min-width: 220px;
+	width: 20%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 19%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 125px;
+		width: 13%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 135px;
+		width: 19%;
+	}
+}
+.cashier-salereturns-table-aprilN {
+	min-width: 220px;
+	width: 20%;
+	@media (min-width: 1601px) and (max-width: 1900px) {
+		min-width: 150px;
+		width: 19%;
+	}
+	@media (min-width: 1401px) and (max-width: 1600px) {
+		min-width: 125px;
+		width: 13%;
+	}
+	@media (max-width: 1400px) {
+		min-width: 135px;
+		width: 19%;
+	}
+}
+
+
+.cashier-salereturns-table-innerO {
+	@media (max-width: 1200px) {
+		overflow-x: auto;
+		scrollbar-height: thin;
+	}
+}
+.cashier-salereturns-table-inner-wrapperO {
+	@media (max-width: 1200px) {
+		width: 1090px;
+		scrollbar-height: thin;
+	}
+}
+
+.cashier-transection-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 8px;
+	@media (min-width: 1401px) and (max-width: 1800px) {
+		padding: 24px 16px;
+	}
+	&-text {
+		h5 {
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--clr-body-bodyText);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+			}
+		}
+		h4 {
+			font-size: 22px;
+			font-weight: 700;
+			color: var(--clr-body-heading);
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 18px;
+			}
+		}
+	}
+	&-percent {
+		span {
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--clr-common-white);
+			height: 30px;
+			line-height: 31px;
+			border-radius: 16px;
+			padding: 0px 12px;
+			@media (min-width: 1401px) and (max-width: 1600px) {
+				font-size: 12px;
+				padding: 0px 8px;
+			}
+		}
+	}
+}
+.cashier-transection-selector {
+	&-single {
+		.mat-form-field-flex {
+			height: 40px;
+			line-height: 38px;
+			padding: 0px 20px; 
+		}
+	}
+}

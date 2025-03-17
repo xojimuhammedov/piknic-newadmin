@@ -1,0 +1,51 @@
+.cashier-pagination {
+    ul {
+        display: inline-flex;
+        border: 1px solid var(--clr-body-grayBorder);
+        li {
+            a {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--clr-body-bodyText);
+                line-height: 40px;
+                display: inline-block;
+                border-right: 1px solid var(--clr-body-grayBorder);
+                &.active {
+                    background: var(--clr-theme-themeBlue);
+                    border-color: var(--clr-theme-themeBlue);
+                    color: var(--clr-common-white);
+                }
+            }
+            &:last-child {
+                a {
+                    border-right: 0px;
+                }
+            }
+            .material-icons {
+                font-size: 15px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+.cashier-pagination-sort {
+    .mat-select-arrow-wrapper {
+        transform: translateY(-1px)
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-infix {
+        padding-top: 11px;
+    }
+}
+.cashier-pagination-sort .cashier-select-field-style .nice-select {
+    background: var(--clr-common-white);
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 40px;
+    &::after {
+        right: 16px;
+    }
+}

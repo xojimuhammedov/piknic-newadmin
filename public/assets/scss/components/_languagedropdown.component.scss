@@ -1,0 +1,34 @@
+.lang-dropdown-wrapper {
+    li {
+        .lang-sub-down {
+            position: absolute;
+            top: 60%;
+            left: -84%;
+            opacity: 0;
+            visibility: hidden;
+            background: var(--clr-common-white);
+            border: 1px solid var(--clr-body-grayBorder);
+            width: 200px;
+            @media (max-width: 575px) {
+                left: auto;
+                right: -84%;
+            }
+            @media (max-width: 480px) {
+                width: 100px;
+                right: -36%;
+            }
+            li {
+                a {
+                    display: block;
+                }
+            }
+        }
+        &:hover {
+            .lang-sub-down {
+                opacity: 1;
+                visibility: visible;
+                top: 50%;
+            }
+        }
+    }
+}

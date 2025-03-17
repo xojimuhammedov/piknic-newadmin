@@ -1,0 +1,42 @@
+.cashier-quickview {
+    min-width: 230px;
+    width: 22%;
+    min-height: 275px;
+    @media (min-width: 1401px) and (max-width: 1600px) {
+		width: 21%;
+		min-width: 195px;
+	}
+    @media (max-width: 1400px) {
+        min-width: 0px;
+        width: 31.33%;
+    }
+    @media (max-width: 991px) {
+        min-width: 0px;
+        width: 31%;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+.cashier-quickview-last {
+    min-width: 80px;
+    min-height: 275px;
+    width: 8%;
+    @media (max-width: 1400px) {
+        min-width: 0px;
+        width: 31.33%;
+    }
+    @media (max-width: 991px) {
+        min-width: 0px;
+        width: 31%;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+.cashier-quickview-wrapper {
+    @media (max-width: 1400px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

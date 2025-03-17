@@ -1,0 +1,28 @@
+.custom-height-70 {
+	height: 70px;
+	min-height: 70px;
+}
+
+.cashier-voucher-account-box {
+	& input.mat-input-element {
+		background: var(--clr-common-white);
+	}
+	.mat-form-field-flex {
+		background: var(--clr-common-white);
+	}
+}
+.cashier-voucher-account-box-btn {
+	button {
+		height: 25px;
+		line-height: 25px;
+		font-size: 12px;
+		font-weight: 600;
+		color: var(--clr-common-white);
+		border-radius: 3px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border: 0px;
+		outline: none;
+		font-family: 'Nunito Sans', sans-serif;
+	}
+}

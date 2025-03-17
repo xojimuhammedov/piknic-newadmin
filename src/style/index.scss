@@ -1,0 +1,9 @@
+@import "../../public/assets/scss/style.scss";
+@import "../../public/assets/css/font-awesome-pro.css";
+@import 'react-toastify/dist/ReactToastify.css';
+@import "../../public/assets/css/flaticon.css";
+@import "../../public/assets/css/nice-select.css";
+
+.ck.ck-editor__editable_inline>:last-child{
+    height:150px !important;
+}

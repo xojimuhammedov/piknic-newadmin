@@ -1,0 +1,42 @@
+.cashier-dashboard-supplier {
+    .cashier-dashboard-supplier-list-name {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 64%;
+        min-width: 180px;
+        @media (min-width: 1401px) and (max-width: 1600px) {
+            min-width: 145px;
+          }
+          @media (min-width: 1201px) and (max-width: 1400px) {
+            min-width: 145px;
+            padding-left: 16px;
+          }
+          @media (min-width: 992px) and (max-width: 1200px) {
+            min-width: 145px;
+          }
+          @media (max-width: 767px) {
+            width: 60%;
+            min-width: 160px;
+            padding-left: 10px;
+          }
+    }
+    .cashier-dashboard-supplier-list-amount {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 35%;
+        min-width: 100px;
+        @media (min-width: 1201px) and (max-width: 1400px) {
+          padding-left: 16px;
+        }
+        @media (max-width: 767px) {
+            width: 90px;
+            min-width: 90px;
+            padding-left: 10px;
+          }
+    }
+}

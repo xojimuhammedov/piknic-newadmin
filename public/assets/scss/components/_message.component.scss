@@ -1,0 +1,215 @@
+.cashier-notification-text {
+    width: calc(100% - 90px);
+    @media (max-width: 500px) {
+		width: calc(100% - 65px);
+	}
+}
+.cashier-notification {
+    @include transition;
+    &:hover {
+        background: var(--clr-common-white);
+    }
+}
+.cashier-notification-feedback {
+    button {
+		font-size: 15px !important;
+		font-weight: 600 !important;
+		color: var(--clr-body-bodyText) !important;
+		border-radius: 5px !important;
+		height: 40px !important;
+		line-height: 38px !important;
+		padding: 0px 20px !important;
+		margin-right: 10px !important;
+        border: 1px solid var(--clr-body-grayBorder);
+        background: none !important;
+		box-shadow: none;
+		@media (max-width: 767px) {
+			margin-bottom: 4px;
+		}
+		&:last-child {
+			margin-right: 0px !important;
+		}
+	}
+    i {
+        margin-right: 5px;
+        transform: translateY(-2px);
+    }
+}
+.cashier-notification-wrapper {
+   padding: 0px;
+    .cashiar-tab-header {
+        margin-right: 50px;
+        border: 0px;
+        @media (max-width: 991px) {
+            margin-right: 25px;
+        }
+        @media (max-width: 767px) {
+            margin-right: 0px;
+            margin-bottom: 32px;
+        }
+    }
+    .cashiar-tab-group {
+        font-family: 'Nunito Sans', sans-serif;
+        flex-direction: row;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    .cashiar-tab-labels {
+        display: flex;
+        flex-direction: column;
+        min-width: 340px;
+        height: 670px;
+        background: #F5F7FB;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: left;
+        overflow-y: scroll;
+        @media (max-width: 767px) {
+            height: 300px;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .mat-ink-bar {
+        display: none;
+    }
+    .casiar-tab-label {
+        white-space: inherit;
+        overflow: hidden;
+        min-height: 100px;
+        padding: 0px;
+        opacity: 1;
+        text-align: left;
+        justify-content: flex-start;
+        min-width: 100%;
+        button[aria-selected="true"] {
+            .cashier-notification {
+                background: var(--clr-common-white);
+            }
+        }
+    }
+    .cashier-notification {
+        padding: 20px 14px;
+        width: 100%;
+        .cashier-notification-text {
+            h5 {
+                line-height: 27px;
+            }
+        }
+    }
+    .cashiar-tab-label {
+        white-space: inherit;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .cashiar-tab-label-container {
+        width: 400px;
+        @media (min-width: 992px) and (max-width: 1200px) {
+            width: 440px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 640px;
+        }
+    }
+    @media (max-width: 500px) {
+        .cashiar-tab-label {
+            min-height: 150px;
+        }
+        .cashiar-tab-labels {
+            min-width: 100%;
+        }
+        .cashier-notification {
+            display: block;
+        }
+        .cashier-notification-text {
+            width: calc(100% - 15px);
+        }
+        .cashier-notification-img {
+            margin-bottom: 15px;
+            margin-right: 0px;
+        }
+    }
+}
+.cashier-notification-body {
+     overflow: hidden;
+}
+.cashier-notification-action {
+    button {
+        display: inline-block;
+        font-size: 16px;
+        margin-right: 12px;
+        color: var(--clr-body-bodyText);
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+.cashier-notification-search {
+    i {
+        position: absolute;
+        top: 16px;
+        padding-left: 10px;
+        color: #B8BBBF;
+        left: 0px;
+    }
+    input.mat-input-element {
+        padding-left: 40px;
+    }
+}
+.cashier-notification-wrapper {
+    @media (max-width: 1200px) {
+        overflow-x: auto;
+    }
+}
+.cashier-notification-wrapper-inner {
+    @media (max-width: 1200px) {
+        min-width: 100%;
+        width: 830px;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+button.mat-raised-button.mat-primary {
+    background: var(--clr-theme-themeBlue);
+}
+.cashiar-tab-label {
+	display: inline-flex;
+}
+
+.cashier-message-inbox-wrapper .cashiar-tab-label {
+    .cashier-notification {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 14px;
+        height: 100%;
+    }
+    .cashier-notification-img {
+        width: 48px;
+        padding: 0px;
+    }
+    .cashier-notification-text {
+        width: calc(100% - 90px);
+        @media (max-width: 500px) {
+            width: calc(100% - 65px);
+        }
+       padding: 0px;
+        height: inherit;
+        line-height: 1;
+        span {
+            float: inherit;
+            margin-bottom: 10px;
+        }
+    }
+}
+.cashier-message-inbox-wrapper .cashiar-tab-label > div {
+    height: inherit;
+    padding: 0;
+}
+.cashier-notification-wrapper .cashiar-tab-label div[aria-selected="true"] {
+    background: var(--clr-common-white);
+}

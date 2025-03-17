@@ -1,0 +1,84 @@
+.cashier-profile-info-btn {
+    button {
+		height: 48px;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        padding-left: 24px;
+		padding-right: 24px;
+		border: 1px solid var(--clr-body-grayBorder);
+        border-radius: 5px;
+        @include transition;
+        &:hover {
+            background: var(--clr-theme-themeBlue);
+            border-color: var(--clr-theme-themeBlue);
+            color: var(--clr-common-white);
+        }
+    }
+}
+
+.custom-height-70 {
+    height: 70px;
+    min-height: 70px;
+}
+
+.cashier-input-field-file label {
+	height: 48px;
+	line-height: 48px;
+	border: 1px solid var(--clr-body-grayBorder);
+	padding-left: 0px;
+	padding-right: 0px;
+	border-radius: 3px;
+	outline: none;
+	display: block;
+	font-size: 14px;
+	color: var(--clr-body-bodyText);
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	width: 100%;
+	background: var(--clr-body-grayBg);
+	@include transition;
+    cursor: pointer;
+	&:focus {
+		background: var(--clr-common-white);
+	}
+}
+.cashier-input-field-styles input,
+.cashier-input-field-style input {
+	&::-moz-placeholder,
+	&::placeholder {
+		color: var(--clr-body-bodyText);
+		opacity: 1;
+		font-family: 'Nunito Sans', sans-serif;
+		font-weight: 400;
+	}
+}
+.cashier-input-field-file label {
+	line-height: 46px !important;
+}
+.cashier-input-field-file input {
+	display: none;
+}
+
+
+.cashier-profile-info-img {
+	width: 120px;
+	@media (max-width: 767px) {
+		width: 80px;
+	}
+	& img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+}
+.cashier-profile-info-text {
+	@media (max-width: 400px) {
+		h4 {
+			font-size: 15px;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+}
