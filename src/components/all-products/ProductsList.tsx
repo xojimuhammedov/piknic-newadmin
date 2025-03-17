@@ -118,6 +118,7 @@ const ProductsList = () => {
       })
       .then((res) => {
         console.log("Response:", res);
+        toast.success("Mahsulot o'zgartirildi!")
       })
       .catch((error) => {
         if (error.response?.status === 403) {
